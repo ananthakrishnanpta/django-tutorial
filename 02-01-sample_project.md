@@ -9,6 +9,7 @@
    ```bash
    pip install virtualenv
    ```
+   - Please note, instead of installing `virtualenv` you can also use the command `python -m venv <virtual_env_name>` to create a virtual environment. If you are using this command, skip step number **4**.
 
 3. **Set Up the Project Directory**
    ```bash
