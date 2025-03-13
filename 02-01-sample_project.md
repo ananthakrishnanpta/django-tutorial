@@ -21,17 +21,17 @@
       ```
       - *Create a Virtual Environment*
       ```bash
-      virtualenv venv
+      virtualenv <name_of_virtual_environment>
       ```
 
 5. **Activate the Virtual Environment**
    - On Windows:
      ```bash
-     venv\Scripts\activate
+     <virtual_env_name>\Scripts\activate
      ```
    - On macOS/Linux:
      ```bash
-     source venv/bin/activate
+     source <virtual_env_name>/bin/activate
      ```
 
 6. **Install Django and other dependencies**
