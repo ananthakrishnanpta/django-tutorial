@@ -33,9 +33,13 @@
      source venv/bin/activate
      ```
 
-6. **Install Django**
+6. **Install Django and other dependencies**
    ```bash
    pip install django
+   ```
+   For example, in case you are using the ImageField, we need to install Pillow
+   ```bash
+   pip install pillow
    ```
 
 7. **Save Your Dependencies**
