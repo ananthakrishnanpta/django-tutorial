@@ -15,16 +15,14 @@
    ```bash
    python -m venv <virtual_env_name>
    ```
-   Another method : 
+   Another method (using virtualenv) : 
       ```bash
       pip install virtualenv
       ```
-
-
-   - **Create a Virtual Environment**
-   ```bash
-   virtualenv venv
-   ```
+      - *Create a Virtual Environment*
+      ```bash
+      virtualenv venv
+      ```
 
 5. **Activate the Virtual Environment**
    - On Windows:
