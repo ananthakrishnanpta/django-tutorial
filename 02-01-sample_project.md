@@ -5,18 +5,19 @@
 1. **Install Python**  
    Ensure Python (3.9 or later) is installed. Download it from [python.org](https://www.python.org/downloads/).
 
-2. **Install Virtualenv**
+2. **Set Up the Project Directory**
+   ```bash
+   mkdir django-project-1
+   cd django-project-1
+   ```
+   
+3. **Install Virtualenv**
    ```bash
    pip install virtualenv
    ```
    - Please note, instead of installing `virtualenv` you can also use the command
    - - `python -m venv <virtual_env_name>` to create a virtual environment. If you are using this command, skip step number **4**.
 
-3. **Set Up the Project Directory**
-   ```bash
-   mkdir django-project-1
-   cd django-project-1
-   ```
 
 4. **Create a Virtual Environment**
    ```bash
