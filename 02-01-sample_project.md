@@ -87,7 +87,8 @@
    Add:
    ```
    # Virtual environment
-   venv/
+   # name of your virtual environment folder
+   venv/ 
 
    # Bytecode files
    __pycache__/
