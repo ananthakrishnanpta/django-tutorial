@@ -42,7 +42,7 @@
    pip install pillow
    ```
 
-7. **Save Your Dependencies**
+7. **Save Your Dependencies** - repeat this following step every time you install or upgrade any dependencies.
    ```bash
    pip freeze > requirements.txt
    ```
