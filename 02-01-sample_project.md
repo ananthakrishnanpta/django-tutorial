@@ -15,7 +15,7 @@
    ```bash
    python -m venv <virtual_env_name>
    ```
-   Another method (using virtualenv) : 
+   - Another method (using virtualenv) : 
       ```bash
       pip install virtualenv
       ```
