@@ -69,6 +69,12 @@
        ├── wsgi.py
    ```
 
+   1. a. **Migrate Schema changes to DB**
+         ```bash
+         cd yshop
+         python manage.py migrate
+         ``` 
+
 2. **Run the Development Server**
    ```bash
    python manage.py runserver
