@@ -54,7 +54,7 @@
 
 1. **Start the Django Project**
    ```bash
-   django-admin startproject yshop .
+   django-admin startproject yshop
    ```
 
    Project structure:
