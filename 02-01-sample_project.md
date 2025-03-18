@@ -95,8 +95,8 @@
    Add:
    ```
    # Virtual environment
-   # name of your virtual environment folder
-   venv/ 
+   # name of your virtual environment folder, eg: here, I'm creating a virtual environment named `virt`
+   virt/ 
 
    # Bytecode files
    __pycache__/
