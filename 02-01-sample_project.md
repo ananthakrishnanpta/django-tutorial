@@ -84,6 +84,7 @@
 ---
 
 #### **Step 3: Setting Up Git and .gitignore**
+*Ensure you are in the main folder outside django project folder where you can see the django project as well as the virtual environment folder*
 
 1. **Initialize a Git Repository**
    ```bash
