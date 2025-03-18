@@ -127,11 +127,11 @@
 
 1. **Create an App**
    ```bash
-   python manage.py startapp products
+   python manage.py startapp mainapp
    ```
 
 2. **Register the App**
-   Add `'products'` to the `INSTALLED_APPS` list in `yshop/settings.py`:
+   Add `'mainapp'` to the `INSTALLED_APPS` list in `yshop/settings.py`:
    ```python
    INSTALLED_APPS = [
        'django.contrib.admin',
@@ -140,7 +140,7 @@
        'django.contrib.sessions',
        'django.contrib.messages',
        'django.contrib.staticfiles',
-       'products',
+       'mainapp',
    ]
    ```
 
@@ -149,7 +149,7 @@
 #### **Step 5: Defining Models**
 
 1. **Create a Model**
-   Open `products/models.py`:
+   Open `mainapp/models.py`:
    ```python
    from django.db import models
 
@@ -164,7 +164,7 @@
 
 2. **Run Migrations**
    ```bash
-   python manage.py makemigrations
+   python manage.py makemigrations mainapp
    python manage.py migrate
    ```
 
@@ -173,7 +173,7 @@
 #### **Step 6: Admin and Superuser Setup**
 
 1. **Register Models with the Admin**
-   Open `products/admin.py`:
+   Open `mainapp/admin.py`:
    ```python
    from django.contrib import admin
    from .models import Product
@@ -204,18 +204,18 @@
 #### **Step 7: Building Views and URLs**
 
 1. **Create a View**
-   Open `products/views.py`:
+   Open `mainapp/views.py`:
    ```python
    from django.shortcuts import render
    from .models import Product
 
    def product_list(request):
        products = Product.objects.all()
-       return render(request, 'products/product_list.html', {'products': products})
+       return render(request, 'product_list.html', {'products': products})
    ```
 
 2. **Set Up URLs**
-   Create `products/urls.py`:
+   Create `mainapp/urls.py`:
    ```python
    from django.urls import path
    from . import views
@@ -231,7 +231,7 @@
 
    urlpatterns = [
        path('admin/', admin.site.urls),
-       path('products/', include('products.urls')),
+       path('', include('mainapp.urls')),
    ]
    ```
 
@@ -240,7 +240,7 @@
 #### **Step 8: Creating Templates**
 
 1. **Set Up Template Directory**
-   Create `products/templates/products/`.
+   Create `mainapp/templates/`.
 
 2. **Create a Template**
    Save this as `product_list.html`:
@@ -271,7 +271,7 @@
    ```
 
 2. **Visit the Product List Page**
-   Navigate to [http://127.0.0.1:8000/products/](http://127.0.0.1:8000/products/) to see your products.
+   Navigate to [http://127.0.0.1:8000/products/](http://127.0.0.1:8000/) to see your products.
 
 ---
 
