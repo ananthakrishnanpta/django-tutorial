@@ -59,14 +59,16 @@
 
    Project structure:
    ```
-   django-project-1/
-   ├── manage.py
-   ├── yshop/
-       ├── __init__.py
-       ├── settings.py
-       ├── urls.py
-       ├── asgi.py
-       ├── wsgi.py
+   django-project-folder/
+   ├──virtual-env-folder/
+   ├──yshop/
+      ├── manage.py
+      ├── yshop/
+          ├── __init__.py
+          ├── settings.py
+          ├── urls.py
+          ├── asgi.py
+          ├── wsgi.py
    ```
 
    1. a. **Migrate Schema changes to DB**
