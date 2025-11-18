@@ -1,4 +1,4 @@
-# ✅ **20 Django Fullstack Project Ideas**
+# **20 Django Fullstack Project Ideas**
 
 ---
 
